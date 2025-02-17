@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assinatura</title>
+    <link rel="stylesheet" href="assinatura.css">
+</head>
+<body>
+   <div class="payment-container">
+    <h2>Pagamento</h2>
+    <form id="payment-form" onsubmit="return redirecionar(event)">
+        <label for="name">Nome no Cartão</label>
+        <input type="text" id="name" name="name" placeholder="Nome no cartão" required>
+
+        <label for="cartao">Número do Cartão:</label>
+        <input type="text" id="cartao" name="cartao" maxlength="16" placeholder="Número do cartão" required>
+
+        <label for="validade">Validade (MM/AA):</label>
+        <input type="text" id="validade" name="validade" placeholder="MM/AA" maxlength="5" required>
+
+        <label for="cvv">CVV (CVV):</label>
+        <input type="text" id="cvv" name="cvv" maxlength="3" placeholder="CVV" required>
+
+        <label for="plano">Escolha seu Plano:</label>
+        <select id="plano" name="plano">
+            <option value="basico">Plano Básico - R$19/mês</option>
+            <option value="premium">Plano Premium - R$29/mês</option>
+        </select>
+
+        <button type="submit">Finalizar</button>
+    </form>
+   </div>
+
+   <script>
+   function redirecionar(event) {
+       event.preventDefault(); // Evita o recarregamento da página
+       window.location.href = 'finalizado.html';
+   }
+   </script>
+
+</body>
+</html>
