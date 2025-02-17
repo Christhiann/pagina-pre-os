@@ -1,0 +1,160 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+.pricing-container {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+.toggle-container input {
+  margin: 0 10px;
+  cursor: pointer;
+}
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 160px;
+  flex-wrap: nowrap;
+}
+.plan {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 45%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+.plan:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.popular {
+  background: #ffcc00;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+.popular::after {
+  content: 'MAIS POPULAR';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff6600;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.plan h2 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.plan .price {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+.plan ul {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+.plan ul li {
+  margin: 10px 0;
+}
+.plan button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+.plan button:hover {
+  background: #0056b3;
+}
+@media (max-width: 768px) {
+  .plan {
+      width: 100%;
+  }
+}
+/* essa parte é do botao do menu */
+.menu {
+  position: fixed;
+  top: 30px; /* Distância do topo */
+  left: 1050px; /* Distância da borda esquerda */
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.menu-btn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.menu-content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.menu-content a {
+  color: #333;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu-content a:hover {
+  background: #f1f1f1;
+}
+
+.menu:hover .menu-content {
+  display: block;
+}
+/* essa parte da logo */
+.logo-container img {
+  max-width: 90px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  position: fixed;
+  top: 30px; /* Distância do topo */
+  left: 230px; /* Distância da borda esquerda */
+  display: inline-block;
+}
+
+
+
